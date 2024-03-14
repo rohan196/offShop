@@ -7,7 +7,7 @@ const CategoryPage = () => {
     <div className="container flex flex-col gap-2 mt-2">
       <div className="encloser flex flex-row w-11/12  m-auto ">
         <div className="what_category w-full ">
-          <div className="top flex   items-center gap-2">
+          <div className="top flex items-center gap-2">
             <p className="text-sm text-opacity-10">Home</p>
             <LiaGreaterThanSolid />
             <p className="text-sm">Causal</p>
@@ -20,7 +20,7 @@ const CategoryPage = () => {
           </div>
         </div>
       </div>
-        <div className="category_main grid grid-cols-2 gap-1 w-11/12 m-auto border-b border-black border-opacity-10 pb-[30px]">
+        <div className="category_main grid grid-cols-3 gap-1 w-11/12 m-auto border-b border-black border-opacity-10 pb-[30px]">
 
             <CategoryItem/>
             <CategoryItem/>

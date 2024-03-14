@@ -8,12 +8,12 @@ const jwtSecret = process.env.JWT_SECRET;
 exports.signup = async(req,res)=>{
     try {
       
-      const result = validationResult(req);
-      console.log(result.array()[0].msg);
+      // const result = validationResult(req);
+      // console.log(result.array()[0].msg);
 
-        if (!result.isEmpty()) {
-          return res.status(400).json({errors: result.array()})
-        }
+      //   if (!result.isEmpty()) {
+      //     return res.status(400).json({errors: result.array()})
+      //   }
 
         const {
           username,
@@ -22,7 +22,12 @@ exports.signup = async(req,res)=>{
           lastname,
           email,
           password,
-          address,
+          street,
+          city,
+          state,
+          zipcode,
+          country,
+          // address,
           phoneNo,
         } = req.body;
     
@@ -41,7 +46,12 @@ exports.signup = async(req,res)=>{
           lastname,
           email,
           passwordHash: password,
-          address,
+          // address,
+          street,
+          city,
+          state,
+          zipcode,
+          country,
           phoneNo,
         });
     

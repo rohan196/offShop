@@ -11,6 +11,7 @@ import Suggestions from './Suggestions'
 import Cart from './Cart/Cart'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login/Login'
+import Filters from './Filters'
 
 
 
@@ -45,6 +46,7 @@ const Home = () => {
         <Suggestions/>
         <CategoryPage/>
         <Cart />
+        {/* <Filters/> */}
       </>
       )
     }

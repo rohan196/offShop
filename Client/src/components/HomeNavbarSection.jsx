@@ -45,7 +45,7 @@ const HomeNavbarSection = () => {
   // const options = ['On Sale', 'New Arrivals', 'Brands'];
 
   return (
-    <div className="flex justify-center py-2   ">
+    <div className="flex justify-center py-2">
       <div className="w-11/12 smallbox py-3 px-2 flex justify-between items-center relative border-b border-black border-opacity-10 pb-7">
         <RxHamburgerMenu className="lg:hidden " onClick={toggleMenu} />
         <img className=" w-[100px] mr-2 sm:w-[200px]" src={logo} alt="" />

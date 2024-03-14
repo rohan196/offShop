@@ -4,7 +4,6 @@ import zara from '../assets/Home/zara.svg'
 import gucci from '../assets/Home/gucci.svg'
 import prada from '../assets/Home/prada.svg'
 import ck from '../assets/Home/ck.svg'
-import test from "../assets/Home/gucci.svg"
 
 const HomeBrands = () => {
   return (
