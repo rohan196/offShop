@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import logoBig from "../../assets/OffShop.png";
 import axios from 'axios';
-const backendUrl = 'http://localhost:5000'; // Replace with your actual backend URL
+const backendUrl = 'http://localhost:5000';
 
 
 import { Link, useLocation } from 'react-router-dom';

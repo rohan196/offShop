@@ -15,7 +15,7 @@ const authenticateSeller = (req, res, next) => {
     console.log(req.seller);
     next();
   } catch (error) {
-    res.status(401).json({ error: "Unauthorized : Invaldi tokne" });
+    res.status(401).json({ error: "Unauthorized : Invalid token" });
   }
 };
 
