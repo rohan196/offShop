@@ -1,16 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import {  useNavigate } from 'react-router-dom';
 
 import logoBig from "../../assets/OffShop.png";
 import axios from 'axios';
 const backendUrl = 'http://localhost:5000';
-
+import { UserContext } from "../Context/UserContext";
 
 import { Link, useLocation } from 'react-router-dom';
+// import UserContext from "../Context/UserContext";
 
 const Register = () => {
+  const navigate = useNavigate()
     const location=useLocation();
     const [current,setcurrent]=useState("/");
-
+    const {updateUser, user} = useContext(UserContext);
+ 
     const [userData , setUserData] = useState({
       username: "",
         firstname: "",
@@ -35,16 +39,17 @@ const Register = () => {
 
 
     const handleRegister = async (e) => {
-      console.log(userData)
-      try {
-        // const url = `${backendUrl}/api/signup`
-        // console.log(url)
-        const response = await axios.post(`${backendUrl}/api/signup`,{
+
+      try {             
+        const response = await axios.post(`${backendUrl}/api/signup`,
           userData
-        })
-        console.log('Registration successful:', response.data);
+      )
+        console.log('Registration successful:');
 
+        updateUser('working');
+        console.log("user from context", user)
 
+        navigate('/home')
       } catch (error) {
         if (error.response) {
           // The request was made and the server responded with a status code
@@ -54,7 +59,7 @@ const Register = () => {
       }
       
 
-      console.log(userData)
+     
     }
     
     useEffect(()=>{
@@ -95,7 +100,7 @@ const Register = () => {
                 <input onChange={(e)=>{handleChange(e , 'state')}} value={userData.state} className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded-xl my-2" type="text" placeholder="State" />
                 <input onChange={(e)=>{handleChange(e , 'zipcode')}} value={userData.zipcode} className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded-xl my-2" type="text" placeholder="Zip Code" />
                 <input onChange={(e)=>{handleChange(e , 'country')}} value={userData.country} className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded-xl my-2" type="text" placeholder="Country" />
-              <input onChange={(e)=>{handleChange(e, 'phoneNo')}} value={userData.phoneNo} className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded-xl my-2" type="number" placeholder="Phone Number" />
+              <input onChange={(e)=>{handleChange(e, 'phoneNo')}} value={userData.phoneNo} className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded-xl my-2" type="text" placeholder="Phone Number" />
             </div>
           </div>
 

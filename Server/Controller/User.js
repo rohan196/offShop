@@ -59,6 +59,7 @@ exports.signup = async(req,res)=>{
     
         const savedCustomer = await newCustomer.save();
     
+        console.log("saved")
         res.status(200).json(savedCustomer);
       } catch (err) {
         console.log("error creating user");

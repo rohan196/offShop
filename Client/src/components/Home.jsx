@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import HomeDiscountSection from './HomeDiscountSection'
 import HomeNavbarSection from './HomeNavbarSection'
 import HomeRectangle from './HomeRectangle'
@@ -12,11 +12,13 @@ import Cart from './Cart/Cart'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login/Login'
 import Filters from './Filters'
-
+import { UserContext } from './Context/UserContext'
 
 
 
 const Home = () => {
+  const {user} = useContext(UserContext);
+  console.log(user)
   return (
     // <Router>
       <>
