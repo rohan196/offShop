@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import topDown from "../assets/Home/topDown.svg";
 import magnifier from "../assets/Home/magnifier.svg";
@@ -8,18 +8,23 @@ import { FaRegUser } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/Home/OffShopLogoTemp.svg";
 import Login from "./Login/Login";
-
+import { UserContext } from '../components/Context/UserContext'
 import { Link, useLocation } from 'react-router-dom';
 
 const HomeNavbarSection = () => {
 
   const [menuVisible, setMenuVisible] = useState(false);
   const [inputVisible, setInputVisible] = useState(false);
+  const [isloggedin, setIsLoggedin] = useState(false);
   // const [isLogin , setIsLogin] = useState(true);
   // const [isLoginVisible, setIsLoginVisible] = useState(false);
-
+  const { user } = useContext(UserContext)
   const location = useLocation();
   const [current, setcurrent] = useState("/");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const backendUrl = "http://localhost:5000";
+
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -29,12 +34,24 @@ const HomeNavbarSection = () => {
     setInputVisible(!inputVisible);
   }
 
-
   useEffect(() => {
     setcurrent(location.pathname);
-    //  console.log(current);
   }, [location]);
-  // };
+
+  useEffect(() => {
+    user ? setIsLoggedin(true) : null;
+  }, [])
+
+
+  const toggleuser = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleUserClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   // const [selectedOption, setSelectedOption] = useState(null);
 
@@ -57,11 +74,11 @@ const HomeNavbarSection = () => {
               <div className="shop rounded-lg text-sm text-center text-bold">
                 <Link to="Home/Browsedressstyle" className={" " + (current == "/Home/Browsedressstyle" ? "text-blue-500" : "")}> Shop </Link>
               </div>
-            <img src={topDown} alt="" />
-            </li>            
+              <img src={topDown} alt="" />
+            </li>
             <li className="">On Sale</li>
             <li>New Arrivals</li>
-            
+
             <li>Brands</li>
           </ul>
         </div>
@@ -78,36 +95,29 @@ const HomeNavbarSection = () => {
             />
           </div>
 
-          <div className="login w-[60px] rounded-lg text-sm bg-black text-center text-white p-1 pb-2 m-auto text-bold">
-            <Link to="/login" className={" " + (current == "/login" ? "text-blue-500" : "")}> Login </Link>
-          </div>
-
+          {!isloggedin
+            &&
+            <div className="login w-[60px] rounded-lg text-sm bg-black text-center text-white p-1 pb-2 m-auto text-bold">
+              <Link to="/login" className={" " + (current == "/login" ? "text-blue-500" : "")}> Login </Link>
+            </div>
+          }
           <div className="cart">
-          <Link to="/cart" className={" " + (current == "/cart" ? "text-blue-500" : "")}> <FiShoppingCart /> </Link>
-          </div>
-          <div className="user">
-            <FaRegUser />
+            <Link to="/cart" className={" " + (current == "/cart" ? "text-blue-500" : "")}> <FiShoppingCart /> </Link>
           </div>
 
-          {/* <div className="inputs w-[550px] flex relative items-center text-gray-400 focus-within:text-gray-800">
-          <IoIosSearch
-            size={27}
-            className="absolute ml-3 pointer-events-none"
-            />
-          <input
-            type="text"
-            placeholder="Search for products..."
-            name="search"
-            id=""
-            autoComplete="off"
-            className=" hidden absolute lg:flex pr-3 pl-10 w-[550px] font-semibold py-2 px-2 rounded-[62px] text-black border-none ring-2 ring-gray-300 focus:outline-none focus:ring-gray-500 "
-            />
-        </div>
 
-        <div className="cart_profile flex gap-6 items-center">
-          <FiShoppingCart size={27} />
-          <FaRegUser size={27} />
-        </div> */}
+          {isloggedin
+            &&
+            <div className="user">
+              <FaRegUser onClick={handleUserClick} />
+              {isDropdownOpen && (
+                <div className="dropdown absolute border-2 p-1">
+                  Hi, username
+                </div>
+              )}
+            </div>
+          }
+
         </div>
 
 

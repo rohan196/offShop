@@ -106,8 +106,9 @@ exports.signin = async (req,res)=>{
           httpOnly: true,
           maxAge: 86400000,
         });
+        
     
-        res.status(200).json({ user: existingUser, message: "Sign Successfull" });
+        res.status(200).json({ user: existingUser, message: "login Successfull" });
       } catch (err) {
         res.status(401).json({ error: err.message });
       }

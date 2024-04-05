@@ -18,7 +18,7 @@ import { UserContext } from './Context/UserContext'
 
 const Home = () => {
   const {user} = useContext(UserContext);
-  console.log(user)
+  console.log("iam cuming" ,user)
   return (
     // <Router>
       <>

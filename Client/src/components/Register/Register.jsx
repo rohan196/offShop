@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
 import {  useNavigate } from 'react-router-dom';
-
 import logoBig from "../../assets/OffShop.png";
 import axios from 'axios';
-const backendUrl = 'http://localhost:5000';
 import { UserContext } from "../Context/UserContext";
-
 import { Link, useLocation } from 'react-router-dom';
 // import UserContext from "../Context/UserContext";
+
+const backendUrl = 'http://localhost:5000';
 
 const Register = () => {
   const navigate = useNavigate()
@@ -16,7 +15,7 @@ const Register = () => {
     const {updateUser, user} = useContext(UserContext);
  
     const [userData , setUserData] = useState({
-      username: "",
+        username: "",
         firstname: "",
         middlename: "",
         lastname: "",
@@ -41,15 +40,20 @@ const Register = () => {
     const handleRegister = async (e) => {
 
       try {             
-        const response = await axios.post(`${backendUrl}/api/signup`,
+          const response = await axios.post(`${backendUrl}/api/signup`,
           userData
       )
+      // console.log(response)
         console.log('Registration successful:');
+        // console.log(response.data)
+        updateUser(response.data, () => {
+          // console.log("user from context", user);
+      });
+      
+        // console.log("user from context", user)
+        
 
-        updateUser('working');
-        console.log("user from context", user)
-
-        navigate('/home')
+        navigate('/login')
       } catch (error) {
         if (error.response) {
           // The request was made and the server responded with a status code
@@ -62,6 +66,8 @@ const Register = () => {
      
     }
     
+    // console.log(user)
+
     useEffect(()=>{
         setcurrent(location.pathname);
        //  console.log(current);
