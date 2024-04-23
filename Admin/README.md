@@ -1,8 +1,18 @@
-# React + Vite
+# About Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Admin Dashboard Frontend project build on React with Syncfusion fast development component tool.
 
-Currently, two official plugins are available:
+It has features such as-
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. UserProfile
+2. Notifications
+3. Chat
+4. Shopping Cart
+5. Multiple Theme Setting
+6. Charts (pie, sparkline, pyramid etc.)
+7. Calendar
+8. Kanban
+9. Color-picker
+10. Editor
+
+Project link is in description! Let me know your feedback on these project.

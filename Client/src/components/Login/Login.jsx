@@ -31,7 +31,6 @@ const Login = () => {
     e.preventDefault();
 
     try {
-
        await axios.post(`${backendUrl}/api/signin`, loginData)
        .then((res)=>{
          console.log(res.data.user);
