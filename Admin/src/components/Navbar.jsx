@@ -68,13 +68,13 @@ const Navbar = () => {
           color={currentColor}
           icon={<FiShoppingCart />}
         />
-        <NavButton
+        {/* <NavButton
           title="Chat"
           dotColor="#03C907"
           customFunc={() => handleClick("chat")}
           color={currentColor}
           icon={<BsChatLeft />}
-        />
+        /> */}
         <NavButton
           title="Notifications"
           dotColor="#03C907"
@@ -91,7 +91,7 @@ const Navbar = () => {
             <p>
               <span className="text-gray-400 text-14">Hi,</span>{" "}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Rohit
+                User
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />

@@ -9,7 +9,7 @@ import {
 import {
   FiShoppingBag,
   FiEdit,
-  FiPieChart,
+  // FiPieChart,
   FiBarChart,
   FiCreditCard,
   FiStar,
@@ -17,7 +17,7 @@ import {
 } from "react-icons/fi";
 import {
   BsKanban,
-  BsBarChart,
+  // BsBarChart,
   BsBoxSeam,
   BsCurrencyDollar,
   BsShield,
@@ -29,7 +29,7 @@ import { RiContactsLine, RiStockLine } from "react-icons/ri";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
 import { HiOutlineRefresh } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
-import { GiLouvrePyramid } from "react-icons/gi";
+// import { GiLouvrePyramid } from "react-icons/gi";
 import { GrLocation } from "react-icons/gr";
 import avatar from "./avatar.jpg";
 import avatar2 from "./avatar2.jpg";
@@ -42,7 +42,7 @@ import product4 from "./product4.jpg";
 import product5 from "./product5.jpg";
 import product6 from "./product6.jpg";
 import product7 from "./product7.jpg";
-import product8 from "./product8.jpg";
+// import product8 from "./product8.jpg";
 
 export const gridOrderImage = (props) => (
   <div>
@@ -524,76 +524,84 @@ export const links = [
     title: "Pages",
     links: [
       {
-        name: "orders",
+        name: "Homepage",
         icon: <AiOutlineShoppingCart />,
       },
       {
-        name: "employees",
+        name: "DressStyle",
         icon: <IoMdContacts />,
       },
       {
-        name: "customers",
+        name: "Suggestions",
+        icon: <RiContactsLine />,
+      },
+      {
+        name: "Products Page",
+        icon: <RiContactsLine />,
+      },
+      {
+        name: "Cart",
         icon: <RiContactsLine />,
       },
     ],
   },
   {
-    title: "Apps",
+    title: "Ecommerce",
     links: [
       {
-        name: "calendar",
+        name: "Products",
         icon: <AiOutlineCalendar />,
       },
       {
-        name: "kanban",
+        name: "Add Products",
         icon: <BsKanban />,
       },
       {
-        name: "editor",
+        name: "Orders",
         icon: <FiEdit />,
       },
       {
-        name: "color-picker",
+        name: "Shops",
         icon: <BiColorFill />,
       },
     ],
   },
   {
-    title: "Charts",
+    title: "Profiles",
     links: [
       {
-        name: "line",
+        name: "employees",
         icon: <AiOutlineStock />,
       },
       {
-        name: "area",
+        name: "customers",
         icon: <AiOutlineAreaChart />,
       },
 
       {
-        name: "bar",
+        name: "Shops",
         icon: <AiOutlineBarChart />,
       },
-      {
-        name: "pie",
-        icon: <FiPieChart />,
-      },
-      {
-        name: "financial",
-        icon: <RiStockLine />,
-      },
-      {
-        name: "color-mapping",
-        icon: <BsBarChart />,
-      },
-      {
-        name: "pyramid",
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: "stacked",
-        icon: <AiOutlineBarChart />,
-      },
+      // {
+      //   name: "pie",
+      //   icon: <FiPieChart />,
+      // },
+      // {
+      //   name: "financial",
+      //   icon: <RiStockLine />,
+      // },
+      // {
+      //   name: "color-mapping",
+      //   icon: <BsBarChart />,
+      // },
+      // {
+      //   name: "pyramid",
+      //   icon: <GiLouvrePyramid />,
+      // },
+      // {
+      //   name: "stacked",
+      //   icon: <AiOutlineBarChart />,
+      // },
     ],
   },
 ];
@@ -945,6 +953,18 @@ export const ordersGrid = [
 ];
 
 export const customersData = [
+  {
+    CustomerID: 1,
+    CustomerName: "Rohan",
+    CustomerEmail: "nirav@gmail.com",
+    CustomerImage: avatar2,
+    ProjectName: "Hosting Press HTML",
+    Status: "Active",
+    StatusBg: "#8BE78B",
+    Weeks: "40",
+    Budget: "$2.4k",
+    Location: "India",
+  },
   {
     CustomerID: 1001,
     CustomerName: "Nirav Joshi",

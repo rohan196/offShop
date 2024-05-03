@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login/Login'
 import Filters from './Filters'
 import { UserContext } from './Context/UserContext'
+import AddProduct from './AddProduct'
 
 
 
@@ -48,6 +49,7 @@ const Home = () => {
         <Suggestions/>
         <CategoryPage/>
         <Cart />
+        <AddProduct />
         {/* <Filters/> */}
       </>
       )
