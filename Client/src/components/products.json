@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_SlCk1sKJOX1SaVVO-6xhVcsXAdT2EjVBEKUItVji2zSbhTCMmgsvoJ_alDuPHqK5dl3-KJDm1K6MjP2062oHL1bE-OUUsZuu2KCBUFmxuDHzTTgtigMhuz76Son4rMpNdetYBSZHZE3uHsYqb6sFH2urmk4IarbDHZ3g70sLvmBrv-Xcb3c7Td0Py8/s320/product1.jpeg",
+      "title": "Adidas Hoodie",
+      "rating": "4/5",
+      "price": "300",
+      "description": "Elevate your wardrobe with the Adidas Hoodie, a quintessential blend of comfort and style. Crafted from premium materials, this hoodie offers unrivaled coziness while exuding the iconic Adidas flair."
+    },
+    {
+      "id": 2,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwAokRzE94H1n0fuZunv12S9-WVWF510QKsjBzGbrQ1BLldkOIztwPbvDLiCmPPwjUajKTtu2ZH5lHOlNa1Z4iVfc27Hpd4DB9i8To9QTk4iagNQ0E7oVfujfg5CMIvvw9PKNg2mVaXq4KEEAi3PX2_K12B7mBLmA_ctPn5tjf9u0Ci90iP1HsYU0rdPM/s320/product2.jpeg",
+      "title": "Saturday Bagpack",
+      "rating": "4/5",
+      "price": "100",
+      "description": "Meet your new weekend essential: the Saturday Backpack. Designed for both style and practicality, this sleek pack is perfect for your Saturday adventures."
+
+    },
+    {
+      "id": 3,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwzxOhCLH3nv8j8X5872ruC7Sje3mmRKHKUHlaz0qSyQl77uGMxG5nUJCF04OzCx8PYAGzrD81PzRMvAV5iluKSlmbeFDCt-edXvipUhL1osQXkur9XPXVltxT0axoBX4WXuVfD6Oa7dTmoUWc9dWHHH5MvOxclRqj4BFd9wlD2ULIeC1DRcDCRidHeD4/s320/product3.jpeg",
+      "title": "Ultimate Hat",
+      "rating": "4/5",
+      "price": "50",
+      "description": "Introducing the Ultimate Hat, your all-day companion for style and sun protection. Crafted with care and precision, this hat blends comfort with timeless design. Perfect for any adventure or casual outing."
+
+    },
+    {
+      "id": 4,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp1jeTsGHD3U6uREFsjWOkHjrSlWqIFluXArBWkqNVeTN6Nt5mtj-nFhweNZO8Ux4iH4iu25FIn6RGeSiRdw9IiRbKOxeo20fWpVO2u2Dxj7HC02lx3g7tTs9BNNVW0AExA6pYaJluMKOZlZ-Oa8PMWXS8ZFYs51ZcAfOB14Q34mu2zNP9EGBIQO96tko/s320/product4.jpeg",
+      "title": "Messi GOAT TShirt",
+      "rating": "4/5",
+      "price": "250",
+      "description": "Introducing the Messi GOAT T-shirt, a tribute to the legendary footballer Lionel Messi. Crafted with soft, premium cotton and featuring a bold graphic print of Messi in action, this tee is a must-have for fans of the game. Whether you're cheering from the stands or kicking back with friends, show your admiration for the greatest of all time with style and comfort."
+
+    },
+    {
+      "id": 5,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgePb5JY87zNDW0OuK8IdgH1m5ufNOJfW_9oNedNFI8jfplMdxLfSsLLDvnMl2RXs5aJRDI73-YtgU5XOl2iwgVOnY7GVm2VDoZEJe6qXZ_Zg3iv0-e5CDaSjf7UtCDuuhRvYMEok2a9Ln2y-AtRR8oCFKBi73xjOySdb6RrYC9g_OuKXHNjwhwU1plDW8/s320/product5.jpeg",
+      "title": "Adicolor Hoodie",
+      "rating": "4/5",
+      "price": "125",
+      "description": "Introducing the Adicolor Hoodie, a modern take on a classic wardrobe staple. Crafted with Adidas's signature attention to detail and quality, this hoodie blends comfort and style seamlessly. Made from premium materials, it offers a soft and cozy feel while showcasing the iconic Adicolor design. "
+
+    },
+    {
+      "id": 6,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqWHSnq44j6YvlOxkstOyqOBx1oa7qrbM2eYqDnCrBMuFAoCXBaEHS7dxup_JWqbzY-5BkQJ2JiVqWy6I_inNghWNxnbKngSh1LqtsNCo6bBEZpki5y6945YDH-UIFBXNIwz-yb5QCg00JedDX4ItrMyNeBSVdzMJTEIPiz1qqJKjVLHPCU7dp2kCKBhw/s320/product6.jpeg",
+      "title": "Adidas Earbuds",
+      "rating": "4/5",
+      "price": "200",
+      "description": "Introducing Adidas Earbuds, the ultimate fusion of sound, style, and performance. Engineered with precision by audio experts and designed with the iconic Adidas flair, these earbuds are your perfect workout companion. With premium sound quality and a secure fit, they keep you motivated and focused on your fitness goals."
+
+    },
+    {
+      "id": 7,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvyMFyB3YHEufpMiz5fn_Bq-zKB2ZU1X-uwsAnWmZziVLz-0eQb0vz0KxU195gXxnHRdiO17mUyJ8vEl0B8NtZODsAYp0n-umt4oh-SbPAbDl900KEXhozP4Cx4PoWhiBgX3tt2J7nLweU6ofYU8M_OGVyAg24e6bu0ws7EIiwg3_uvIEPkCrMbAwpRS0/s320/product7.jpeg",
+      "title": "Metal Bottle 1L",
+      "rating": "4/5",
+      "price": "80",
+      "description": "Introducing our Stylish Metal Bottle – the perfect blend of functionality and fashion for your hydration needs. Crafted from high-quality stainless steel, this bottle not only keeps your beverages refreshingly cold or piping hot for hours but also elevates your style game with its sleek and modern design."
+
+    },
+    {
+      "id": 8,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUPRehLaKTgPHBOVXvnovxJ8cFGhkjcC1lH3CN_mRGv6_xWluCpbHoBNdn3FgNryDjiTsciY1xsTq_REzYf6GWKo2VGM2cKiSHMfI4KQnb7PwVaXQTSJDbn5i4FVyF1gS_lRll90bcru-5J6UxzrxNAGEUozxV7Kzp7bGNlsjo0ZstU8KyM_qIFQHeVBM/s320/product8.jpeg",
+      "title": "Ultraboost Shoes",
+      "rating": "4/5",
+      "price": "250",
+      "description": "Introducing Ultraboost Shoes – the pinnacle of performance and style in athletic footwear. Designed by Adidas, these shoes are engineered to provide unparalleled comfort, support, and energy return for your runs and workouts."
+
+    },
+    {
+      "id": 9,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc0hJGT53AFCJFCEQCcLQQ-UN6j-bt6JQYDwrSeT9_gVheXthaD8pCXaJTPSn6HQnm36B0IqAj3U8Sc3KpB-ZAZpOYbK0pIQw2YJjVOdbt8R40aExGwiTVU4ogYo2gl9m9rZ0F0A5YOxg8AmtIyvKCocDN3d29DtOJeXyOLSVlq9b7J6nCFv4LorgnzGo/s320/shoe.jpeg",
+      "title": "Shoes",
+      "rating": "4/5",
+      "price": "250",
+      "description": "Introducing Ultraboost Shoes – the pinnacle of performance and style in athletic footwear. Designed by Adidas, these shoes are engineered to provide unparalleled comfort, support, and energy return for your runs and workouts."
+
+    }
+  ]
+  

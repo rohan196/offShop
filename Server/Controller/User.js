@@ -75,20 +75,21 @@ exports.signin = async (req,res)=>{
         const { username, password } = req.body;
     
         const existingUser = await Customer.findOne({ username });
+        
         // check whether customer exists or not
-        if (!existingUser) {
-          res.status(401).json({ error: "Invalid credentials" });
-        }
-    
-        // if existing user then match the password
-        const passwordMatch = await bcrypt.compare(
-          password,
-          existingUser.passwordHash
-        );
-        if (!passwordMatch) {
-          res.status(401).json({ error: "Invalid Credentials" });
-        }
-    
+      if (!existingUser) {
+       return  res.status(401).json({ error: "Invalid credentials" });
+      }
+  
+      // if existing user then match the password
+      const passwordMatch = await bcrypt.compare(
+        password,
+        existingUser.passwordHash
+      );
+      if (!passwordMatch) {
+       return res.status(401).json({ error: "Invalid Credentials" });
+      }
+  
         // if signin is successfull generate a jwt token
     
         const token = jwt.sign(
@@ -137,3 +138,22 @@ exports.deleteAccount = async(req,res)=>{
 
 }
 
+exports.addProductToOrder = async (req, res) => {
+  try {
+    const { userId, productId, quantity } = req.body;
+
+    // Validate that the user exists
+    const user = await Customer.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    // Add the product ID and quantity to the orders array
+    user.orders.push({ productId, quantity });
+    await user.save();
+
+    res.status(200).json({ message: "Product added to orders", user });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

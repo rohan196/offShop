@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import HomeDiscountSection from './HomeDiscountSection'
 import HomeNavbarSection from './HomeNavbarSection'
 import HomeRectangle from './HomeRectangle'
@@ -13,13 +13,20 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login/Login'
 import Filters from './Filters'
 import { UserContext } from './Context/UserContext'
-import AddProduct from './AddProduct'
+import AllProducts from './AllProducts'
+// import AddProduct from './AddProduct'
 
 
 
 const Home = () => {
   const {user} = useContext(UserContext);
-  console.log("iam cuming" ,user)
+  console.log("Yes Yes Yes" ,user)
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    console.log("token: " + token);
+   
+  }, []);
   return (
     // <Router>
       <>
@@ -45,11 +52,14 @@ const Home = () => {
         <HomeRectangle/>
         <HomeBrands/>
         <Browsedressstyle/>
-        <ProductDetailHome/>
+        <AllProducts/>
+        {/* <ProductDetailHome/> */}
         <Suggestions/>
-        <CategoryPage/>
-        <Cart />
-        <AddProduct />
+        {/* <AllProducts /> */}
+        {/* <CategoryPage/> */}
+        <HomeFooter/> 
+        {/* <Cart /> */}
+        {/* <AddProduct /> */}
         {/* <Filters/> */}
       </>
       )

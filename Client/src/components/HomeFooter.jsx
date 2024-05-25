@@ -10,7 +10,7 @@ import pay  from '../assets/Home/pay.png'
 
 const HomeFooter = () => {
   return (
-    <div className="relative mt-16 w-full bg-[#F2F0F1]">
+    <div className="relative  w-full bg-[#F2F0F1]">
         <div className='static bg-white w-full h-[90px]'>
             <div className='absolute top-0 mt-0 m-auto left-12 right-12 w-10/12 h-[180px] pl-10 pr-10 bg-black rounded-2xl p-5'>
                 <div className='flex flex-row'>

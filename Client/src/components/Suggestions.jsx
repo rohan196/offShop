@@ -1,42 +1,29 @@
 import React from 'react'
 import moreLikeThis from "../assets/Home/moreLikeThis.svg"
 import ProductCard from './ProductCard'
-import tshirt1 from "../assets/Home/tshirt1.svg"
+import suggestions from './suggestions.json';
 
 const Suggestions = () => {
+
   return (
-    <div className='m-6 h-[500px]'>
+    <div className='m-6 mb- px-10 py-4'>
         <div className='flex flex-col items-center justify-center m-auto p-4'>
             <img src={moreLikeThis} 
             alt=""
-            className='w-[350px]' 
+            className='w-[500px]' 
             />
         </div>
-        <div className='flex flex-cols m-auto justify-center'>
-            <ProductCard 
-                img={tshirt1}
-                title="Good T-Shirt Number 1"
-                rating="4/5" 
-                price="500"
-            />
-            <ProductCard 
-                img={tshirt1}
-                title="Good T-Shirt Number 2"
-                rating="4/5" 
-                price="300"
-            />
-            <ProductCard 
-                img={tshirt1}
-                title="Good T-Shirt Number 3"
-                rating="4/5" 
-                price="400"
-            />
-            <ProductCard 
-                img={tshirt1}
-                title="Good T-Shirt Number 4"
-                rating="4/5" 
-                price="500"
-            />
+        <div className='grid mt-8 ml-16 grid-col-3 lg:grid-cols-4 lg:gap-4'>
+        {suggestions.map((product) => (
+        <ProductCard
+          key={product.id}
+          img={product.img}
+          title={product.title}
+          rating={product.rating}
+          price={product.price}
+          id={product.id}
+        />
+      ))}         
         </div>
     </div>
   )

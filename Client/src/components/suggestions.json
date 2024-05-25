@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_SlCk1sKJOX1SaVVO-6xhVcsXAdT2EjVBEKUItVji2zSbhTCMmgsvoJ_alDuPHqK5dl3-KJDm1K6MjP2062oHL1bE-OUUsZuu2KCBUFmxuDHzTTgtigMhuz76Son4rMpNdetYBSZHZE3uHsYqb6sFH2urmk4IarbDHZ3g70sLvmBrv-Xcb3c7Td0Py8/s320/product1.jpeg",
+      "title": "Adidas Hoodie",
+      "rating": "4/5",
+      "price": "300",
+      "description": "Product1"
+    },
+    {
+      "id": 2,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwAokRzE94H1n0fuZunv12S9-WVWF510QKsjBzGbrQ1BLldkOIztwPbvDLiCmPPwjUajKTtu2ZH5lHOlNa1Z4iVfc27Hpd4DB9i8To9QTk4iagNQ0E7oVfujfg5CMIvvw9PKNg2mVaXq4KEEAi3PX2_K12B7mBLmA_ctPn5tjf9u0Ci90iP1HsYU0rdPM/s320/product2.jpeg",
+      "title": "Saturday Bagpack",
+      "rating": "4/5",
+      "price": "100",
+      "description": "Product2"
+
+    },
+    {
+      "id": 3,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwzxOhCLH3nv8j8X5872ruC7Sje3mmRKHKUHlaz0qSyQl77uGMxG5nUJCF04OzCx8PYAGzrD81PzRMvAV5iluKSlmbeFDCt-edXvipUhL1osQXkur9XPXVltxT0axoBX4WXuVfD6Oa7dTmoUWc9dWHHH5MvOxclRqj4BFd9wlD2ULIeC1DRcDCRidHeD4/s320/product3.jpeg",
+      "title": "Ultimate Hat",
+      "rating": "4/5",
+      "price": "50",
+      "description": "Product3"
+
+    },
+    {
+      "id": 4,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp1jeTsGHD3U6uREFsjWOkHjrSlWqIFluXArBWkqNVeTN6Nt5mtj-nFhweNZO8Ux4iH4iu25FIn6RGeSiRdw9IiRbKOxeo20fWpVO2u2Dxj7HC02lx3g7tTs9BNNVW0AExA6pYaJluMKOZlZ-Oa8PMWXS8ZFYs51ZcAfOB14Q34mu2zNP9EGBIQO96tko/s320/product4.jpeg",
+      "title": "Messi GOAT TShirt",
+      "rating": "4/5",
+      "price": "250",
+      "description": "Product4"
+
+    }
+    ]
+  

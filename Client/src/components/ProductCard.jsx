@@ -1,20 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ProductCard = ({ img, title, rating, price }) => (
-    <div className='lg:w-[300px] lg:h-[400px] m-2'>
-        <div className="image_div w-[250px] h-[225px] p-0">
-            <img className="img w-full h-full" src={img} alt="product_image" />
-        </div>
-        <div className="prod_title m-1">
-            <h2 className="text font-bold">{title}</h2>
-        </div>
-        <div className="prod_rating m-1">
-            <p>{rating}</p>
-        </div>
-        <div className="prod_price m-1">
-            <p className='font-bold'>${price}</p>
-        </div>
-        
-    </div>
-)
-export default ProductCard
+const ProductCard = ({ img, title, price, id }) => {
+
+  const addToCart = () => {
+    console.log('Added to cart:', { id, title, price });
+  }
+
+  return (
+    <Link to={`/product/${id}`} className="product-card">
+      <div className="card mb-8">
+        <img src={img} alt={title} className="card-img" />
+        <h2 className='font-bold text-lg px-2 py-2'>{title}</h2>
+
+        <p className='font-bold text-md px-2 pb-2'>${price}</p>
+        <button 
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+          onClick={addToCart}
+          >
+          Add to Cart
+        </button>
+      </div>
+    </Link>
+  );
+};
+
+export default ProductCard;

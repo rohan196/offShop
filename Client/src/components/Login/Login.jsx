@@ -3,7 +3,8 @@ import React, { useState, useEffect, useContext } from "react";
 import logoBig from "../../assets/OffShop.png";
 
 // import { Link, useLocation } from 'react-router-dom';
-
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../Context/UserContext";
@@ -20,6 +21,7 @@ const Login = () => {
     password: "",
   });
 
+
   const handleChange = (e, field) => {
     setLoginData((prev) => ({
       ...prev,
@@ -28,20 +30,28 @@ const Login = () => {
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault();
-
+   
+    console.log("login")
     try {
        await axios.post(`${backendUrl}/api/signin`, loginData)
        .then((res)=>{
          console.log(res.data.user);
+         console.log("Login successful frorm front end");
+         console.log("ntoehunohu",res.data.user)
+         localStorage.setItem('token', res?.data?.user);
+         toast.success("login successful")
+         console.log(res?.data.user)
+         updateUser(res?.data.user);
+           navigate("/home");
+
        })
        .catch((err)=>{
+          toast.error(err.message)
          console.log(err.message)
        })
 
-      console.log("Login successful frorm front end");
-      updateUser("working"); // Update user context
-      navigate("/home");
+    
+   
     } catch (error) {
       console.error("Login failed:", error.message);
     }
