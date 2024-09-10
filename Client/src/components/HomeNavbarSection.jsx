@@ -7,6 +7,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/Home/OffShopLogoTemp.svg";
+import search from "../assets/search.png";
 import Login from "./Login/Login";
 import { UserContext } from '../components/Context/UserContext'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
@@ -59,7 +60,7 @@ const HomeNavbarSection = () => {
   //   setSelectedOption(option);
   // };
 
-  // const options = ['On Sale', 'New Arrivals', 'Brands'];
+  const options = ['On Sale', 'New Arrivals', 'Brands'];
 
   return (
     <div className="flex justify-center py-2">
@@ -67,24 +68,32 @@ const HomeNavbarSection = () => {
         <RxHamburgerMenu className="lg:hidden " onClick={toggleMenu} />
         <img className=" w-[100px] mr-2 sm:w-[200px] cursor-pointer" src={logo} alt="" onClick={()=>{ navigate("/home");}} />
 
-        {/* <div className={`categories  justify-center items-center absolute top-10 bg-white px-3 ${menuVisible ? 'flex' : 'hidden'}  lg:flex lg:relative lg:top-0 `}>
+        { current === "/" &&
+        <div className={`categories  justify-center items-center absolute top-10 bg-white px-3 ${menuVisible ? 'flex' : 'hidden'}  lg:flex lg:relative lg:top-0 `}>
           <ul className=" flex flex-col gap-2 lg:flex-row lg:gap-7 xl:gap-9">
 
             <li className=" items-center flex ">
-              <div className="shop rounded-3xl bg-slate-300 text-gray-700 font-semibold p-2 px-4 text-sm text-center text-bold">
-                <Link to="/allproducts" className={" " + (current == "/allproducts" ? "text-blue-500" : "")}> Shop </Link>
+              <div className="w-[80px] rounded-2xl text-sm bg-black text-center text-white py-2 px-4 m-auto text-bold">
+                <Link to="/shoppingPage" className={" " + (current == "/shoppingPage" ? "text-blue-500" : "")}> Shop </Link>
               </div>
             </li>
           </ul>
-        </div> */}
+        </div>
+        }
 
         <div className="flex justify-between items-center gap-[20px]">
-          <div className="Search flex items-center sm:relative text-black focus-within:text-gray-800 gap-3 mr-[25px] ">
-            {/* <IoIosSearch onClick={toggelSearch} className="  absolute ml-2" /> */}
+          <div className="Search py-1 flex items-center sm:relative border-gray border-2 text-black focus-within:text-gray-800 gap-3 mr-[25px] bg-gray-300 rounded-2xl">
+            <img 
+              src={search}
+              alt=""
+              className="ml-4"
+              height={20}
+              width={20}
+            />
             <input
-              className={` ${inputVisible ? 'flex' : 'hidden'}  w-[100px] sm:w-[350px]  border-black pl-7 rounded-xl focus:outline-none font-semibold lg:flex`}
+              className={` ${inputVisible ? 'flex' : 'hidden'} ml-1 w-[100px] sm:w-[350px] pl-4 bg-inherit placeholder-gray focus:outline-none rounded-2xl font-semibold lg:flex`}
               type="text"
-              // placeholder="Search for products..."
+              placeholder="Search for products..."
               name=""
               id=""
             />

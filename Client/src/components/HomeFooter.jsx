@@ -34,7 +34,7 @@ const HomeFooter = () => {
             </div>
         </div>
         <div className='p-36 pb-5 w-full'>
-            <div className='flex flex-cols pb-24 border-b border-black border-opacity-10 '>
+            <div className='flex flex-cols pb-16 border-b border-black border-opacity-10 '>
             <div className='flex-1 p-0'>
                 <img className=" h-[35px]" src={logo} alt="" />
                 <p className='mt-4 text-base font-normal'>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
@@ -43,7 +43,7 @@ const HomeFooter = () => {
                     <FaFacebook size={28} />  
                     <FaInstagram size={28} />
                     <FaGithub size={28} />
-                </div>
+                </div>                 
             </div>
             <div className='flex-auto ml-36'>
                 <div className='flex flex-cols gap-10'>

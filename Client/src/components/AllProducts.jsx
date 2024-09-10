@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import ProductCard from './ProductCard'
-import allProducts from './Products.json';
+import allProducts from './products.json';
 
 import { useNavigate } from "react-router-dom";
 import { Link, useLocation } from 'react-router-dom';
@@ -9,7 +9,7 @@ import { Link, useLocation } from 'react-router-dom';
 const AllProducts = () => {
     const navigate = useNavigate()
     const location=useLocation();
-    const [current,setcurrent]=useState("/");
+    const [current, setcurrent]=useState("/");
         
     return (
         <div className='m-6 mb- px-10 py-4'>

@@ -5,6 +5,7 @@ import axios from "axios";
 import HomeFooter from "../HomeFooter";
 import HomeNavbarSection from "../HomeNavbarSection";
 import products from "../../components/products.json";
+import Suggestions from "../Suggestions";
 
 const ProductDetails = () => {
   const { id: productId } = useParams();
@@ -105,6 +106,7 @@ const ProductDetails = () => {
           </div>
         </div>
       )}
+      <Suggestions />
       <HomeFooter />
     </div>
   );

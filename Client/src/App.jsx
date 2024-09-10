@@ -13,6 +13,7 @@ import CartRouter from "./components/CartRouter";
 import AddProduct from "./components/AddProduct";
 import ProductDetails from "./components/productDetailPage/ProductDetails";
 import { ToastContainer } from "react-toastify";
+import ShoppingPage from "./components/ShoppingPage/ShoppingPage";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Home" element={<Home/>}/>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/shoppingPage" element={<ShoppingPage />} />
         <Route path="/register" element={<Register  />} />
         <Route path="/cart" element={<CartRouter />} />
         <Route path="/add-product" element={<AddProduct />} />
